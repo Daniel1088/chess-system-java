@@ -78,6 +78,10 @@ public class UI {
 		System.out.println();
 		System.out.println("Turn:"+chessMatch.getTurn());
 		System.out.println("Wait Player:"+chessMatch.getCurrentPlayer());
+		if(chessMatch.getcheck())
+		{
+			System.out.println("CHECK!");
+		}
 	}
 
 	private static void printPiece(ChessPiece piece, boolean backGround) {
